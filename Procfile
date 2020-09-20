@@ -1,1 +1,1 @@
-worker: ./start.sh
+worker: gunicorn server:app
