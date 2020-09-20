@@ -2,8 +2,8 @@ from flask import Flask
 from flask import send_file
 import logging
 from time import sleep
-import subprocess
 import scraper
+# import subprocess
 
 app = Flask(__name__)
 
@@ -14,13 +14,13 @@ logging.basicConfig(
     datefmt='%m/%d/%Y %I:%M:%S %p'
 )
 
-# @app.before_first_request
-# def start_scraper():
-#     scraper.main()
+# subprocess.run(["python3", "scraper.py"])
+
 
 @app.route('/')
 def hello_world():
     return send_file("map_history.txt")
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")

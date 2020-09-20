@@ -1,1 +1,1 @@
-web: gunicorn server:app
+web: python scraper.py & gunicorn server:app

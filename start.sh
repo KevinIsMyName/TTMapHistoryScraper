@@ -7,4 +7,4 @@ pkill -9 python
 python -m venv venv
 source venv/Scripts/activate
 pip3 install -r requirements.txt
-python scraper.py & python server.py
+python scraper.py & gunicorn server:app
