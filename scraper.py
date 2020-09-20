@@ -5,9 +5,11 @@ def main():
     from time import sleep
 
     try:
-        open("map_history.txt")
+        f = open("map_history.txt")
     except FileNotFoundError:
-        open("map_history.txt", "a+")
+        f = open("map_history.txt", "a+")
+        f.write("START\n")
+        f.close
 
     URL = "https://www.battlemetrics.com/servers/squad/6670512"
 
