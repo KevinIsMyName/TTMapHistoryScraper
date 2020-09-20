@@ -29,7 +29,7 @@ def main():
             last_map = cur_map
             with open("map_history.txt", "a+") as f:
                 f.write(datetime.now().strftime(
-                    "%m/%d/%Y %I:%M:%S %p") + " - " + cur_map + "\n")
+                    "%m/%d/%Y %I:%M:%S %p UTC") + " - " + cur_map + "\n")
 
         sleep(300)  # 5 minute polling rate
 
