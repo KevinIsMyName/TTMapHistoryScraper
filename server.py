@@ -3,7 +3,6 @@ from flask import send_file
 import logging
 from time import sleep
 import scraper
-# import subprocess
 
 app = Flask(__name__)
 
@@ -13,9 +12,6 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%m/%d/%Y %I:%M:%S %p'
 )
-
-# subprocess.run(["python3", "scraper.py"])
-
 
 @app.route('/')
 def hello_world():
