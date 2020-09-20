@@ -14,9 +14,9 @@ logging.basicConfig(
     datefmt='%m/%d/%Y %I:%M:%S %p'
 )
 
-@app.before_first_request
-def start_scraper():
-    scraper.main()
+# @app.before_first_request
+# def start_scraper():
+#     scraper.main()
 
 @app.route('/')
 def hello_world():
