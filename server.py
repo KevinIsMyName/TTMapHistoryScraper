@@ -14,7 +14,7 @@ logging.basicConfig(
 )
 
 @app.route('/')
-def hello_world():
+def index():
     return send_file("map_history.txt")
 
 
