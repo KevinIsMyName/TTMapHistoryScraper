@@ -3,7 +3,7 @@ from flask import send_file
 import logging
 from time import sleep
 import subprocess
-from . import scraper
+import scraper
 
 app = Flask(__name__)
 
