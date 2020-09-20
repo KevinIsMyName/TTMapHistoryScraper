@@ -25,11 +25,11 @@ def main():
 
         if cur_map != last_map:
             last_map = cur_map
-        with open("map_history.txt", "a+") as f:
-            f.write(datetime.now().strftime(
-                "%m/%d/%Y %I:%M:%S %p") + " - " + cur_map + "\n")
+            with open("map_history.txt", "a+") as f:
+                f.write(datetime.now().strftime(
+                    "%m/%d/%Y %I:%M:%S %p") + " - " + cur_map + "\n")
 
-        sleep(1)  # 5 minute polling rate
+        sleep(300)  # 5 minute polling rate
 
 
 if __name__ == "__main__":
