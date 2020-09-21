@@ -1,1 +1,1 @@
-web: python scraper.py & gunicorn server:app
+web: python scraper.py > scraper.log & gunicorn server:app > server.log
