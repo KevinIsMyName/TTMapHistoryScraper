@@ -8,7 +8,7 @@ def main():
         f = open("map_history.txt")
     except FileNotFoundError:
         f = open("map_history.txt", "a+")
-        f.write("START\n")
+        f.write("\n")
         f.close
 
     URL = "https://www.battlemetrics.com/servers/squad/6670512"
