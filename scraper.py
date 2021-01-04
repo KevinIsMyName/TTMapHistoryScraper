@@ -11,12 +11,12 @@ def main():
         f.write("\n")
         f.close
 
-    URL = "https://www.battlemetrics.com/servers/squad/6670512"
+    server_URL = "https://www.battlemetrics.com/servers/squad/9358257"
 
     # This is all totally hard coded
     last_map = None
     while True:
-        page = requests.get(URL)
+        page = requests.get(server_URL)
         soup = BeautifulSoup(page.content, "html.parser")
         results = soup.select("dl.css-1i1egz4")
         try:
